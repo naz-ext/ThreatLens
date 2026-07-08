@@ -8,3 +8,4 @@ ThreatLens is designed to be clear and minimal:
 -Warning before large uploads over mobile data
 -No accounts, ads, analytics, or tracking
 Files uploaded to VirusTotal may be retained and shared with security vendors. Do not upload confidential files.
+naz.ext@icloud.com
