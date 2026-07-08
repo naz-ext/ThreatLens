@@ -78,7 +78,3 @@ This policy may be updated when ThreatLens changes how it handles data. The late
 For privacy questions, contact:
 
 naz.ext@icloud.com
-
-
-
-naz.ext@icloud.com
