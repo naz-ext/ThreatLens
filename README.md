@@ -1,19 +1,8 @@
-# ThreatLens
-ThreatLens helps you check the reputation of selected files using VirusTotal.
-The app first calculates the file hash on your iPhone and checks whether VirusTotal already has a report. If a report exists, ThreatLens shows a simple result without uploading the file. If no report exists, you can upload the file to VirusTotal for analysis.
-ThreatLens is designed to be clear and minimal:
--Hash lookup before upload
--Simple harmful or no-threat result
--VirusTotal API key stored locally in Keychain
--Warning before large uploads over mobile data
--No accounts, ads, analytics, or tracking
-Files uploaded to VirusTotal may be retained and shared with security vendors. Do not upload confidential files.
-
 # ThreatLens Privacy Policy
 
-Last updated: July 7, 2026
+Last updated: July 19, 2026
 
-ThreatLens is a file reputation checker for iPhone. It helps you check selected files using VirusTotal.
+ThreatLens is a file reputation and file attribute utility for iPhone. It helps you check selected files using VirusTotal and inspect extended attributes on files you choose.
 
 ## What ThreatLens Collects
 
@@ -30,6 +19,12 @@ If VirusTotal already has a report for the file hash, ThreatLens displays that r
 If VirusTotal does not have an existing report, ThreatLens may upload the selected file to VirusTotal for analysis. Before uploading files over 10 MB on mobile data, ThreatLens asks for your confirmation.
 
 ThreatLens does not upload files automatically in the background without a scan request from you.
+
+## File Attributes
+
+ThreatLens can inspect and clear extended attributes from files you choose through the iOS file picker. This processing happens on your device.
+
+ThreatLens stores a recent local history of files whose attributes were cleared, including file name, file size when available, clear time, and the names of cleared attributes. ThreatLens does not upload extended attribute values or recently cleared history to its own servers.
 
 ## VirusTotal
 
@@ -49,9 +44,11 @@ ThreatLens stores the following on your device:
 
 - Your VirusTotal API key, if you enter one
 - The currently selected file reference while using the app
+- Recent scan history, including file name, file size, scan time, verdict, and engine counts
+- Recently cleared attribute history, including file name, file size when available, clear time, and cleared attribute names
 - Temporary upload data while preparing a VirusTotal upload
 
-ThreatLens does not store scan history on its own servers. ThreatLens does not operate any server for this app.
+ThreatLens does not store scan history or cleared attribute history on its own servers. This history is stored locally on your device. ThreatLens does not operate any server for this app.
 
 ## Network and Mobile Data
 
@@ -66,6 +63,8 @@ ThreatLens is not directed to children and does not knowingly collect personal i
 You can avoid uploading a file by not continuing when ThreatLens indicates that no existing VirusTotal report is available.
 
 You can remove your VirusTotal API key by editing the API key field in the app and clearing it.
+
+You can avoid using the file attribute tools by not selecting files in the Attributes tab or by not confirming attribute removal.
 
 You can delete the app to remove locally stored app data from your device. iOS may retain Keychain items according to system behavior.
 
